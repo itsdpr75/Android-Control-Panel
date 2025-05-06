@@ -1,0 +1,9 @@
+CREATE TABLE apps (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,          -- El nombre de la aplicación
+  image_path TEXT NOT NULL,    -- La ruta de la imagen (icono)
+  exec_path TEXT NOT NULL,     -- La ruta del archivo .exe o .py
+  comment TEXT                 -- Un comentario opcional
+);
+INSERT INTO apps (name, image_path, exec_path, comment) 
+VALUES ('Reflejo', 'tools/reflejo.png', 'tools/reflejo.py', 'Reflejo de pantalla');
